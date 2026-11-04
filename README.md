@@ -1,8 +1,8 @@
-# <div align='center'>adudu</div>
+# <div align='center'>AsepzBailys</div>
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="Pou"/>
+  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="AsepzBailys"/>
 
 </p>
 
@@ -12,7 +12,7 @@
 [![GitHub](https://img.shields.io/badge/source-GitHub-black.svg)](https://github.com/pou-code/Baileys)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](package.json)
 
-A WebSockets library for interacting with WhatsApp Web, maintained under the **PouCode** brand.
+A WebSockets library for interacting with WhatsApp Web, maintained under the **AsepzBailys** brand.
 This project is a fork built on top of [Baileys](https://github.com/WhiskeySockets/Baileys) by WhiskeySockets.
 
 </div>
@@ -28,7 +28,7 @@ npm install github:adudu/Baileys
 Or add it to your `package.json` manually:
 ```json
 "dependencies": {
-  "@adudu/baileys": "github:adudu/Baileys"
+  "@Asepzz/baileys": "github:Asepzz/Baileys"
 }
 ```
 
@@ -37,7 +37,7 @@ Already have a bot built on the original `@whiskeysockets/baileys` and don't wan
 name points to this fork:
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "github:adudu/Baileys"
+  "@whiskeysockets/baileys": "github:Asepzz/Baileys"
 }
 ```
 With this alias, keep using `require('@whiskeysockets/baileys')` in your code as-is — npm will
@@ -45,7 +45,7 @@ resolve it to this fork under the hood.
 
 You can also pin to a specific branch or commit:
 ```bash
-npm install github:adudu/Baileys#main
+npm install github:Asepzz/Baileys#main
 ```
 
 ## Import
@@ -53,7 +53,7 @@ npm install github:adudu/Baileys#main
 const {
   default: makeWASocket,
   // other exports
-} = require('@adudu/baileys');
+} = require('@Asepzz/baileys');
 ```
 
 ---
@@ -65,7 +65,7 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@adudu/baileys');
+} = require('@Asepzz/baileys');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome'),
@@ -79,10 +79,10 @@ const {
   default: makeWASocket,
   fetchLatestWAWebVersion,
   Browsers
-} = require('@adudu/baileys');
+} = require('@Asepzz/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.adudu('Chrome'),
+  browser: Browsers.asepz('Chrome'),
   printQRInTerminal: false,
   version: await fetchLatestWAWebVersion(),
   aiLabel: false // set true to show an AI label on messages sent by the bot
@@ -90,7 +90,7 @@ const client = makeWASocket({
 });
 
 const number = "628XXXXXXXXXX";
-const code = await client.requestPairingCode(number.trim()); // or (number, "YYYYYYYY") for a custom pairing code
+const code = await client.requestPairingCode(number.trim()); // or (number, "AsepzBail") for a custom pairing code
 
 console.log("Your pairing code: " + code);
 ```
@@ -100,7 +100,7 @@ console.log("Your pairing code: " + code);
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@adudu/baileys');
+} = require('@Asepzz/baileys');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
